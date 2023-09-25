@@ -1,0 +1,126 @@
+<div id="formTimeTable">
+        <h1>Реєстрація розкладу пар на один день</h1>
+        <form action="data" method="post" id="myForm">
+            <label for="group">Група:</label>
+            <input type="text" id="course" name="group" required>
+
+            <div class="" style="margin: 20px 0px 10px;"><b>Предмети</b></div>
+            
+            <label for="subject1">1:</label>
+            <input type="text" id="subject_1" name="subject_1" required>
+
+            <label for="subject2">2:</label>
+            <input type="text" id="subject_2" name="subject_2" required>
+
+            <label for="subject3">3:</label>
+            <input type="text" id="subject_3" name="subject_3" required>
+
+            <label for="subject4">4:</label>
+            <input type="text" id="subject_4" name="subject_4" required>
+
+            <label for="subject5">5:</label>
+            <input type="text" id="subject_5" name="subject_5" required>
+
+            <input type="submit" value="Зареєструвати" id="buttonOK" class="noBorder indentation" style="padding: 1ex;">
+        </form>
+    </div>
+
+
+
+                <div id="subject6" class="flex">
+                <div class="flex" id="subject_6_text">
+                    <label for="subject_6">6:</label>
+
+                    <div class="two_element">
+                        <div class="flex">
+                            <div class="two_element" style="height: 100%;">
+                                <input type="text" id="subject_6" name="subject_6_sub1_pair" class="two_element_" placeholder="1ч, парний тижд.">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="two_element">
+                                <input type="text" id="subject_6" name="subject_6_sub1_pair" class="two_element_" placeholder="1ч, парний тижд." style="width: 100%;">
+                            </div>
+                            <div class="two_element">
+                                <input type="text" id="subject_6" name="subject_6_sub1_pair" class="two_element_" placeholder="1ч, парний тижд.">
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+                
+
+                <div class="two_element" style="width: auto; margin-left: 2ex; margin-right: 1ex;">
+                    <div class="two_element" style="width: auto; margin: auto;">
+                        <!-- level button -->
+                        <div class="flex" id="subject_6_b_1" style="width: 2.5ex; margin: auto 1ex;">
+                            <div class="two_element">
+                                <div style="background-color: #949494; width: 1ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                                <div style="background-color: #949494; width: 1ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                            </div>
+                            <div class="two_element">
+                                <div style="background-color: #949494; width: 2.25ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0; margin-top: 0;"></div>
+                                <div style="background-color: #949494; width: 2.25ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0; margin-top: 0;"></div>
+                            </div>
+                        </div>        
+                        <div class="flex" id="subject_6_b_2" style="width: 2.5ex; margin: auto 1ex;">
+                            <div class="two_element">
+                                <div style="background-color: #949494; width: 1ex; height: 2.25ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                                <div style="background-color: #949494; width: 1ex; height: 2.25ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                            </div>
+                        </div>
+                        <div class="flex" id="subject_6_b_3" style="width: 2.5ex; margin: auto 1ex;">
+                            <div class="two_element">
+                                <div style="background-color: #949494; width: 2.25ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                            </div>
+                            <div class="two_element">
+                                <div style="background-color: #949494; width: 2.25ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0; margin-top: 0;"></div>
+                            </div>
+                        </div>
+                        <div class="flex" id="subject_6_b_4" style="width: 2.5ex; margin: auto 1ex;">
+                            <div class="two_element" style="margin: auto;">
+                                <div style="background-color: #949494; width: 2.25ex; height: 2.25ex; border-radius: 0%; margin-left: 0.25ex; margin-top: 0.25ex; margin-bottom: 0.25ex;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="two_element" style="width: auto; margin: auto;">
+                        <div class="flex" id="subject_6_b_5" style="width: 2.5ex; margin: auto 1ex;">
+                            <div class="two_element">
+                                <div style="background-color: #949494; width: 2.25ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                            </div>
+                            <div class="two_element">
+                                <div style="background-color: #949494; width: 1ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0; margin-top: 0;"></div>
+                                <div style="background-color: #949494; width: 1ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0; margin-top: 0;"></div>
+                            </div>
+                        </div>
+                        <div class="flex" id="subject_6_b_6" style="width: 2.5ex; margin: auto 1ex;;">
+                            <div class="two_element">
+                                <div style="background-color: #949494; width: 1ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                                <div style="background-color: #949494; width: 1ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                            </div>
+                            <div class="two_element">
+                                <div style="background-color: #949494; width: 2.25ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0; margin-top: 0;"></div>
+                            </div>
+                        </div>
+                        <div class="two_element" id="subject_6_b_7" style="width: 2.5ex; margin: auto 1ex;;">
+                            <div class="flex">
+                                <div style="background-color: #949494; width: 1ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                                <div style="background-color: #949494; width: 1ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0; margin-top: 0"></div>
+                            </div>
+                            <div class="flex">
+                                <div style="background-color: #949494; width: 1ex; height: 2.25ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                            </div>
+                        </div>
+                        <div class="two_element" id="subject_6_b_8" style="width: 2.5ex; margin: auto 1ex;;">
+                            <div class="flex">
+                                <div style="background-color: #949494; width: 1ex; height: 2.25ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                            </div>
+                            <div class="flex">
+                                <div style="background-color: #949494; width: 1ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0;"></div>
+                                <div style="background-color: #949494; width: 1ex; height: 1ex; border-radius: 0%; margin: 0.25ex; margin-right: 0; margin-top: 0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
