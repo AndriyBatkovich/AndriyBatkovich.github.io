@@ -42,20 +42,37 @@
 
         #controls-container {
             position: absolute;
-            bottom: 50px;
+            bottom: 30px; /* Трохи опустив нижче для мобільних */
             left: 50%;
             transform: translateX(-50%);
             background: rgba(255, 255, 255, 0.85);
-            padding: 10px 20px;
+            padding: 10px 15px; /* Зменшив бокові відступи */
             border-radius: 40px;
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             z-index: 10;
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 20px;
+            justify-content: space-between; /* Рівномірно розкидає кнопки по краях */
+            width: 90%; /* Контейнер тепер адаптивний */
+            max-width: 400px; /* Але не розтягуватиметься більше 400px на моніторах */
+            box-sizing: border-box; /* Щоб відступи не ламали ширину */
             backdrop-filter: blur(8px);
             border: 1px solid #d1d1d1;
+        }
+
+        #patternIndicator {
+            font-weight: 600;
+            font-size: 0.85rem; /* Трохи менший шрифт, щоб влазили довгі назви */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            flex-grow: 1; /* Текст динамічно займає весь вільний простір між кнопками */
+            text-align: center;
+            color: #000;
+            white-space: nowrap; /* Забороняємо тексту переноситись на новий рядок */
+            overflow: hidden; 
+            text-overflow: ellipsis; /* Якщо назва ну дуууже довга, вона обріжеться трьома крапками (...) */
+            padding: 0 10px;
         }
 
         .nav-btn {
@@ -91,15 +108,6 @@
             transform: scale(0.95);
         }
 
-        #patternIndicator {
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            min-width: 180px;
-            text-align: center;
-            color: #000;
-        }
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
