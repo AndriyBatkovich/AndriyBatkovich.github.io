@@ -133,11 +133,11 @@
         const container = document.getElementById('canvas-container');
         const loaderElement = document.getElementById('loader');
         const patternsData = [
-            { name: "Оранджеві котики", path: "patterns/5384469713406072972.jpg" },
             { name: "Темні котики", path: "patterns/5384469713406072973.jpg" },
+            { name: "Оранджеві котики", path: "patterns/5384469713406072972.jpg" },
             { name: "Метелики", path: "patterns/5384469713406072974.jpg" },
             { name: "Абстрактна заливка", path: "patterns/5384469713406072976.jpg" },
-            { name: "Веселий губка боб", path: "patterns/5384469713406072977.jpg" },
+            //{ name: "Веселий губка боб", path: "patterns/5384469713406072977.jpg" },
             { name: "Веселий губка боб", path: "patterns/5384469713406072978.jpg" },
             { name: "Абстрактна заливка", path: "patterns/5384469713406072998.jpg" }
         ];
@@ -253,7 +253,20 @@
             const size = box.getSize(new THREE.Vector3());
 
             loadedModel.position.sub(center); 
-            camera.position.z = Math.max(size.x, size.y, size.z) * 1.5;
+            // camera.position.z = Math.max(size.x, size.y, size.z) * 1.5;
+            // Визначаємо найбільший габарит моделі
+            const maxDim = Math.max(size.x, size.y, size.z);
+
+            // Базовий множник віддалення для комп'ютерів
+            let distanceMultiplier = 1.5;
+
+            // Якщо екран вузький (телефон), збільшуємо відстань пропорційно ширині екрану
+            if (camera.aspect < 1) {
+                distanceMultiplier = (1.5 / camera.aspect) * 0.85; 
+            }
+
+            // Задаємо нову позицію камери
+            camera.position.z = maxDim * distanceMultiplier;
             
             scene.add(loadedModel);
             loaderElement.style.display = 'none';
