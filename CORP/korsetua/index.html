@@ -141,13 +141,18 @@
         const container = document.getElementById('canvas-container');
         const loaderElement = document.getElementById('loader');
         const patternsData = [
-            { name: "Темні Котики", path: "patterns/5384469713406072973.jpg" },
-            { name: "Котики", path: "patterns/5384469713406072972.jpg" },
-            { name: "Метелики", path: "patterns/5384469713406072974.jpg" },
-            { name: "Абстрактний", path: "patterns/5384469713406072976.jpg" },
+            { name: "Kitty", path: "patterns/5384469713406072973.jpg" },
+            { name: "Kitty", path: "patterns/5384469713406072972.jpg" },
+            { name: "Butterfly", path: "patterns/5384469713406072974.jpg" },
+            { name: "Chupa Chups", path: "patterns/5384469713406072976.jpg" },
             //{ name: "Веселий губка боб", path: "patterns/5384469713406072977.jpg" },
-            { name: "Губка Боб", path: "patterns/5384469713406072978.jpg" },
-            { name: "Карбон", path: "patterns/5384469713406072998.jpg" }
+            { name: "Улюблені персонажі", path: "patterns/5384469713406072978.jpg" },
+            { name: "Snake Skin", path: "patterns/5384469713406072998.jpg" },
+
+            { name: "Black Edition", path: "patterns/black.jpg"  },
+            { name: "Green Classic", path: "patterns/green.jpg" },
+            { name: "Blue Classic", path: "patterns/blue.jpg" },
+            { name: "White Classic", path: "patterns/white.jpg" }
         ];
 
         let currentIndex = 0;
@@ -286,7 +291,8 @@
         });
 
         const indicator = document.getElementById('patternIndicator');
-        indicator.innerText = `${patternsData[0].name} (1 / ${patternsData.length})`;
+        indicator.innerText = `${patternsData[0].name}`;
+        // (1 / ${patternsData.length})
 
         function updatePattern(index) {
             if (index < 0) {
