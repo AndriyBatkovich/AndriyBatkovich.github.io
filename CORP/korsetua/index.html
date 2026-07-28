@@ -146,7 +146,7 @@
             { name: "Butterfly", path: "patterns/5384469713406072974.jpg" },
             { name: "Chupa Chups", path: "patterns/5384469713406072976.jpg" },
             //{ name: "Веселий губка боб", path: "patterns/5384469713406072977.jpg" },
-            { name: "Улюблені персонажі", path: "patterns/5384469713406072978.jpg" },
+            { name: "Улюбл. персонажі", path: "patterns/5384469713406072978.jpg" },
             { name: "Snake Skin", path: "patterns/5384469713406072998.jpg" },
 
             { name: "Black Edition", path: "patterns/black.jpg"  },
@@ -306,7 +306,7 @@
             customMaterial.map = loadedTextures[currentIndex];
             customMaterial.needsUpdate = true;
             
-            indicator.innerText = `${patternsData[currentIndex].name} (${currentIndex + 1} / ${patternsData.length})`;
+            indicator.innerText = `${patternsData[currentIndex].name}`; // (${currentIndex + 1} / ${patternsData.length})
         }
 
         document.getElementById('prevBtn').addEventListener('click', () => updatePattern(currentIndex - 1));
